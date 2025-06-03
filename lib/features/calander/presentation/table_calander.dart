@@ -1,17 +1,19 @@
+import 'package:calculator_app/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
-
 import 'package:table_calendar/table_calendar.dart';
 
 
-import '../../../gen/colors.gen.dart';
 
 
-class CalendarScreen extends StatefulWidget {
+
+class TableCalendarScreen extends StatefulWidget {
+  const TableCalendarScreen({super.key});
+
   @override
-  _CalendarScreenState createState() => _CalendarScreenState();
+  _TableCalendarScreenState createState() => _TableCalendarScreenState();
 }
 
-class _CalendarScreenState extends State<CalendarScreen> {
+class _TableCalendarScreenState extends State<TableCalendarScreen> {
   DateTime _focusedDay = DateTime.now();
   DateTime? _selectedDay;
 
@@ -19,7 +21,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.cFFFFFF,
-      appBar: AppBar(title: Text('Calendar')),
+      appBar: AppBar(title: const Text('Calendar')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: TableCalendar(
@@ -35,7 +37,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
               _focusedDay = focusedDay;
             });
           },
-          calendarStyle: CalendarStyle(
+          calendarStyle: const CalendarStyle(
             todayDecoration: BoxDecoration(
               color: Colors.orange,
               shape: BoxShape.circle,

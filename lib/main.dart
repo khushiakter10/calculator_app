@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
-import 'package:calculator_app/features/calander/presentation/new_ui_screen.dart';
+import 'package:calculator_app/features/calculator/presentation/calculator_screen.dart';
+
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -9,7 +10,6 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import 'constants/app_constants.dart';
-import 'features/calculator/presentation/calculator_screen.dart';
 import 'gen/colors.gen.dart';
 import 'helpers/di.dart';
 import 'helpers/helper_methods.dart';
@@ -95,7 +95,7 @@ class UtillScreenMobile extends StatelessWidget {
             //  home: const WelcomeScreen(),
             // home:   const OnbordingScreen(),
 
-            home:  khusiScreen (),
+            home:  HomePage (),
           ),
         );
       },

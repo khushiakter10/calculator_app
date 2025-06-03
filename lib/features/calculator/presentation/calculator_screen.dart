@@ -64,31 +64,32 @@ class _HomePageState extends State<HomePage> {
             context: context,
             builder: (context) {
               return AlertDialog(
-                title: Text("Confirmation"),
-                content: Text("Are you suru exit."),
+                title: const Text("Confirmation"),
+                content: const Text("Are you suru exit."),
                 actions: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       ElevatedButton(
-                          style: ButtonStyle(
+                          style: const ButtonStyle(
                               backgroundColor:
                               MaterialStatePropertyAll(Colors.orange)),
                           onPressed: () {
                             Navigator.pop(context, false);
                           },
-                          child: Text(
+                          child: const Text(
                             "No",
                             style: TextStyle(color: Colors.black),
                           )),
                       ElevatedButton(
-                          style: ButtonStyle(
+                          style: const ButtonStyle(
                               backgroundColor:
-                              MaterialStatePropertyAll(Colors.orange)),
+                              MaterialStatePropertyAll(Colors.orange)
+                          ),
                           onPressed: () {
                             exit(0);
                           },
-                          child: Text("Yes",
+                          child: const Text("Yes",
                               style: TextStyle(color: Colors.black))),
                     ],
                   )
@@ -113,13 +114,13 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     width: MediaQuery.of(context).size.width,
                     child: Padding(
-                      padding: EdgeInsets.only(right: 20),
+                      padding: const EdgeInsets.only(right: 20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text(
                             hideInput ? "" : input,
-                            style: TextStyle(fontSize: 34, color: Colors.white),
+                            style: const TextStyle(fontSize: 34, color: Colors.white),
                           ),
                           Text(
                             output,
@@ -300,7 +301,7 @@ class _HomePageState extends State<HomePage> {
   Widget CostomButtoms(text, bgcolor, buttomColor, bottonSize) {
     return Expanded(
         child: Container(
-            margin: EdgeInsets.all(1),
+            margin: const EdgeInsets.all(1),
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(

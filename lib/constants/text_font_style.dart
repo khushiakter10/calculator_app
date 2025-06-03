@@ -101,6 +101,7 @@ static final   headlinec000000w700=
 
 static final   headlinec000000w70018=
   GoogleFonts.poppins(color: AppColors. c000000, fontSize: 18.sp, fontWeight: FontWeight.w700);
+
 static final   headlinec000000w400=
   GoogleFonts.poppins(color: AppColors. c000000, fontSize: 12.sp, fontWeight: FontWeight.w400);
 

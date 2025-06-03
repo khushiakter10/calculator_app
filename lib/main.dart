@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
+import 'package:calculator_app/features/calander/presentation/new_ui_screen.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -94,7 +95,7 @@ class UtillScreenMobile extends StatelessWidget {
             //  home: const WelcomeScreen(),
             // home:   const OnbordingScreen(),
 
-            home:  HomePage (),
+            home:  khusiScreen (),
           ),
         );
       },
